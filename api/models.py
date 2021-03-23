@@ -5,6 +5,7 @@ import uuid
 class Cheff(models.Model):
     id = models.CharField(primary_key=True, max_length=20, verbose_name="ID_Cheff")
     direction = models.CharField(max_length=120, verbose_name="Direction")
+    curriculum = models.TextField(max_length=500, verbose_name="Curriculum Vittae")
     phone = models.IntegerField()
 
     def __str__(self):

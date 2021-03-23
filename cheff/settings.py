@@ -1,16 +1,13 @@
 import os
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# Build paths
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
+# ESCONDA EM PRODUCAO
 SECRET_KEY = '!aq9+n5zjd$(6smbed1$7**pf_x!5966iu@fo^7yw)e4oxellt'
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# ANULE EM PRODUCAO
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -69,7 +66,7 @@ WSGI_APPLICATION = 'cheff.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db333',
+        'NAME': 'workalove',
         'USER': 'postgres',
         'PASSWORD': 'ninalago',
         'HOST': 'localhost',

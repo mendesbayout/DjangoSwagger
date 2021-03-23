@@ -8,7 +8,7 @@ import os
 class CheffSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Cheff
-        fields = ['id', 'direction', 'phone']
+        fields = ['id', 'direction', 'phone', 'curriculum']
 
 
 class RecipeSerializer(serializers.ModelSerializer):
